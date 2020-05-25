@@ -1,5 +1,18 @@
 # test-technique
 
+## How to run ?
+
+### Back
+- cd Back/
+- run mongodb : C:\Program Files\MongoDB\Server\4.2\bin\ directory and double-click on mongo.exe || Lancer la commande 'mongod' (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+- yarn
+- yarn start
+
+### Front
+cd Front/client/
+yarn
+yarn start
+
 ## Contexte :
 Nous avons notre mascotte : Nextie 🦄. Chaque collaborateurs possède sa propre licorne.
 
