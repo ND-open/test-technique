@@ -5,7 +5,7 @@ const jwt = require('jwt-simple');
 const config = require('../config/config');
 
 // 
-const userShema = mongoose.shema(
+const userShema = mongoose.Schema(
     {
         email: {
             type: String,
@@ -36,7 +36,6 @@ userShema.methods = {
     getToken : () => {
         return jwt.encode(this, config.secret);
     }
-
 
 }
 
