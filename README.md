@@ -18,9 +18,9 @@
 
 ## Techs : 
 MERN : {
-Mongo
-Express
-React
+Mongo,
+Express,
+React,
 Node
 }
 
