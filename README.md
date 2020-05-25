@@ -2,9 +2,12 @@
 
 ## How to run ?
 
+### All
+- Vérifier son installation Node.js : lancer la commande node -v
+
 ### Back
 - cd Back/
-- run mongodb : C:\Program Files\MongoDB\Server\4.2\bin\ directory and double-click on mongo.exe || Lancer la commande 'mongod' (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+- Lancer mongodb : C:\Program Files\MongoDB\Server\4.2\bin\ directory and double-click on mongo.exe || Lancer la commande 'mongod' (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
 - yarn
 - yarn start
 
