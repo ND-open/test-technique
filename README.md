@@ -9,9 +9,9 @@
 - yarn start
 
 ### Front
-cd Front/client/
-yarn
-yarn start
+- cd Front/client/
+- yarn
+- yarn start
 
 ## Contexte :
 Nous avons notre mascotte : Nextie 🦄. Chaque collaborateurs possède sa propre licorne.
