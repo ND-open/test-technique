@@ -8,7 +8,7 @@ Chaque licorne a ses spécificités : un sexe, un type et une couleur.
 Ces licornes sont distribuées par un membre de l'administration à un collaborateur, lorsqu'il le souhaite.
 
 ## Besoin :
-L'administration de NextDecision souhaiterais superviser les licornes depuis une plateforme accessible depuis leurs navigateurs. Le navigateur utilisé est Chrome dans sa version la plus récente.
+L'administration souhaiterais superviser les licornes depuis une plateforme accessible depuis leurs navigateurs. Le navigateur utilisé est Chrome dans sa version la plus récente.
 
 ## Réalisable :
 Cette application devra permettre de gérer l'inventaire de licorne et d'en ajouter des nouvelles.
