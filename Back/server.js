@@ -3,6 +3,19 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
+//Connexion à la base de donnée
+mongoose
+  .connect("mongodb://localhost/db",
+    { useNewUrlParser: true,
+    useUnifiedTopology: true })
+  .then(() => {
+    console.log("Connected to mongoDB");
+  })
+  .catch((e) => {
+    console.log("Error while DB connecting");
+    console.log(e);
+  });
+
 // Définition APP
 const app = express();
 
@@ -22,10 +35,11 @@ app.use(function (req, res, next) {
     next();
 });
 
-// First route
-app.get('/hello', (req, res) => {
-    res.json('Hello World')
-})
+// Router
+const router = express.Router();
+app.use('/user', router);
+require(__dirname + "/controllers/userController")(router);
+
 
 // Listen
 const port = 8800;

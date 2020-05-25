@@ -17,6 +17,10 @@ const userShema = mongoose.shema(
         password: {
             type: String,
             required: [true, 'Please enter a Password'],
+        },
+        administration: {
+            type: Boolean,
+            required: [true, 'Please, choose an option'],
         }
 
     },
