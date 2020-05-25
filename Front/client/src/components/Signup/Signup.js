@@ -2,6 +2,7 @@
 import React from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import API from "../../utils/API";
+import signup from "./signup.css";
 
 export class Signup extends React.Component {
   state = {
@@ -16,7 +17,7 @@ export class Signup extends React.Component {
     const { email, password, cpassword, nom, prenom, administration } = this.state;
     if (!email || email.length === 0) return;
     if (!password || password.length === 0 || password !== cpassword) return;
-    //if (!administration || administration.length === 0 || !nom || nom.length === 0 || !prenom || prenom.length === 0 || !administration) return;
+    if (!administration || administration.length === 0 || !nom || nom.length === 0 || !prenom || prenom.length === 0 || !administration) return;
     try {
       const { data } = await API.signup({ email, password, nom, prenom, administration });
       localStorage.setItem("token", data.token);
@@ -80,10 +81,12 @@ export class Signup extends React.Component {
         </FormGroup>
         <FormGroup controlId="administration" >
             <label htmlFor="radioButtonSet">Faites-vous partie de l'administration ?</label>
-            <input type="radio" name="radioButtonSet" value='yes' id="administration" onChange={this.handleChange}/>
-            <label htmlFor="administration">Oui</label>
-            <input type="radio" name="radioButtonSet" value='no' id="administration" defaultChecked onChange={this.handleChange}/>
-            <label htmlFor="administration">Non</label>
+            <div>
+              <input type="radio" name="radioButtonSet" value='yes' id="administration" onChange={this.handleChange}/>
+              <label id="administration" htmlFor="administration">Oui</label>
+              <input type="radio" name="radioButtonSet" value='no' id="administration" defaultChecked onChange={this.handleChange}/>
+              <label id="administration" htmlFor="administration">Non</label>
+            </div>
         </FormGroup>
         <Button onClick={this.send} block  type="submit">
           Inscription

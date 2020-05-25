@@ -2,15 +2,11 @@
   min-width: 100vw;
   min-height: 100vh;
   background-image: linear-gradient(to right top, #e66465, #e66790, #d675b6, #b887d4, #9198e5);
-
-}
-
-.App-content {
-  min-width: 100vw;
-  min-height: 100vh;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .Login {
@@ -23,4 +19,5 @@
   justify-content: center;
   flex-direction: column;
 }
+
 
