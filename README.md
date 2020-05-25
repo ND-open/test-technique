@@ -1,5 +1,29 @@
 # test-technique
 
+## How to run ?
+
+### All
+- Vérifier son installation Node.js : lancer la commande node -v
+
+### Back
+- cd Back/
+- Lancer mongodb : C:\Program Files\MongoDB\Server\4.2\bin\ directory and double-click on mongo.exe || Lancer la commande 'mongod' (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+- yarn
+- yarn start
+
+### Front
+- cd Front/client/
+- yarn
+- yarn start
+
+## Techs : 
+MERN : {
+Mongo,
+Express,
+React,
+Node
+}
+
 ## Contexte :
 Nous avons notre mascotte : Nextie 🦄. Chaque collaborateurs possède sa propre licorne.
 
@@ -33,10 +57,3 @@ La démonstration de l'application sur l'environnement de développement est suf
 
 Toutes mesure anticipées sur le RGPD sont en bonus.
 
-## Techs : 
-MERN : {
-Mongo
-Express
-React
-Node
-}
