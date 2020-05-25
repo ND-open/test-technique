@@ -7,7 +7,8 @@ const bodyParser = require('body-parser');
 mongoose
   .connect("mongodb://localhost/db",
     { useNewUrlParser: true,
-    useUnifiedTopology: true })
+      useUnifiedTopology: true,
+      useCreateIndex: true })
   .then(() => {
     console.log("Connected to mongoDB");
   })

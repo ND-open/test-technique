@@ -1,8 +1,14 @@
+// Import
 import axios from "axios";
+
+// Token
+//let token = localStorage.getItem("token");
+
 const headers = {
   "Content-Type": "application/json",
-  'Authorization': this.authToken
+  //authorization: {token}
 };
+
 const burl = "http://localhost:8800";
 
 export default {
