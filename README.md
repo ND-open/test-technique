@@ -13,6 +13,14 @@
 - yarn
 - yarn start
 
+## Techs : 
+MERN : {
+Mongo
+Express
+React
+Node
+}
+
 ## Contexte :
 Nous avons notre mascotte : Nextie 🦄. Chaque collaborateurs possède sa propre licorne.
 
@@ -46,10 +54,3 @@ La démonstration de l'application sur l'environnement de développement est suf
 
 Toutes mesure anticipées sur le RGPD sont en bonus.
 
-## Techs : 
-MERN : {
-Mongo
-Express
-React
-Node
-}
