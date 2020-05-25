@@ -32,3 +32,11 @@ Dockeriser le projet est un bonus
 La démonstration de l'application sur l'environnement de développement est suffisant, une mise en production est un bonus.
 
 Toutes mesure anticipées sur le RGPD sont en bonus.
+
+## Techs : 
+MERN : {
+Mongo
+Express
+React
+Node
+}
