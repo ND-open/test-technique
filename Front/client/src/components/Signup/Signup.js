@@ -5,6 +5,7 @@ import API from "../../utils/API";
 import signup from "./signup.css";
 
 export class Signup extends React.Component {
+  
   state = {
     nom: "",
     prenom: "",
@@ -13,6 +14,7 @@ export class Signup extends React.Component {
     cpassword: "",
     administration: "no"
   };
+
   send = async () => {
     const { email, password, cpassword, nom, prenom, administration } = this.state;
     if (!email || email.length === 0) return;
@@ -26,12 +28,13 @@ export class Signup extends React.Component {
       console.error(error);
     }
   };
+
   handleChange = (event) => {
     this.setState({
       [event.target.id]: event.target.value
     });
-    console.log(this.state)
   };
+
   render() {
     const { email, password, cpassword, nom, prenom } = this.state;
     return (

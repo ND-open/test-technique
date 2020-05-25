@@ -4,10 +4,12 @@ import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import API from "../../utils/API";
 
 export class Login extends React.Component {
+
   state = {
     email: "",
     password: "",
   };
+
   send = async () => {
     const { email, password } = this.state;
     if (!email || email.length === 0) {
@@ -24,11 +26,13 @@ export class Login extends React.Component {
       console.error(error);
     }
   };
+
   handleChange = (event) => {
     this.setState({
       [event.target.id]: event.target.value
     });
   };
+  
   render() {
     const { email, password } = this.state;
     return (
