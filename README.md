@@ -4,7 +4,7 @@
 
 - Login : :x: => 401 unauthorized
 - Signup : :heavy_check_mark:
-- Dashboard : :x: :heavy_check_mark: Possibilité d'y accès uniquement via l'inscription, pas de possibilité de modifier les licornes
+- Dashboard : :x: :heavy_check_mark: Possibilité d'y accéder uniquement via l'inscription, pas de possibilité de modifier les licornes
 
 ## How to run ?
 
