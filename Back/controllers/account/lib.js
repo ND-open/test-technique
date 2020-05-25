@@ -4,9 +4,9 @@ const passwordHash = require("password-hash");
 
 //
 async function signup(req, res) {
-  const { password, email, administration } = req.body;
+  const { password, email, administration, nom, prenom } = req.body;
 
-  if (!email || !password || !administration) {
+  if (!email || !password || !administration || !nom || !prenom) {
     return res.status(400).json({
       text: "Requête invalide"
     });
@@ -14,6 +14,8 @@ async function signup(req, res) {
 
   // user Object
   const user = {
+    nom,
+    prenom,
     email,
     password: passwordHash.generate(password),
     administration
