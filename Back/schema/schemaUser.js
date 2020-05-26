@@ -37,11 +37,11 @@ const userShema = mongoose.Schema(
 
 userShema.methods = {
 
-    authenticate: (password) => {
+    authenticate(password) {
         return passwordHash.verify(password, this.password);
     },
 
-    getToken : () => {
+    getToken(){
         return jwt.encode(this, config.secret);
     }
 
